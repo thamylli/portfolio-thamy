@@ -476,6 +476,7 @@ body {
   object-fit: cover;
   padding: 2%;
   border: dashed 4px var(--azul-texto);
+  transition: width 0.3s, height 0.3s;
 }
 
 .contexto-principal {
@@ -488,9 +489,8 @@ body {
 .texto-principal {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  text-align: center;
   gap: 20px;
+  text-align: center;
   margin-left: 20px;
 }
 
@@ -499,6 +499,7 @@ body {
   color: var(--azul-texto);
   font-size: 39px;
   display: flex;
+  justify-content: center;
 }
 
 .meu-nome {
@@ -510,6 +511,7 @@ body {
 .meu-nome2 {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .thamylli {
@@ -519,6 +521,75 @@ body {
 .mykaelli {
   margin-left: 100px;
 }
+
+/* 📱 Responsividade */
+@media (max-width: 1024px) {
+  .imagem-principal {
+    width: 280px;
+    height: 280px;
+  }
+
+  .titulo-hello {
+    font-size: 32px;
+  }
+
+  .meu-nome {
+    font-size: 45px;
+  }
+
+  .mykaelli {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-mim__principal {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .texto-principal {
+    margin-left: 0;
+  }
+
+  .imagem-principal {
+    width: 250px;
+    height: 250px;
+  }
+
+  .titulo-hello {
+    font-size: 28px;
+  }
+
+  .meu-nome {
+    font-size: 38px;
+  }
+
+  .mykaelli {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagem-principal {
+    width: 200px;
+    height: 200px;
+  }
+
+  .titulo-hello {
+    font-size: 22px;
+  }
+
+  .meu-nome {
+    font-size: 28px;
+  }
+
+  .mykaelli {
+    margin-left: 15px;
+  }
+}
+
 
 /* ================== HABILIDADES ================== */
 .habilidades__conteudo {
@@ -578,16 +649,19 @@ body {
 .gif__sobre-mim {
   border: solid 3px var(--preto);
   object-fit: cover;
+  height: 250px; /* mantém a altura que você quiser */
   width: 100%;
-  max-width: 400px;
-  height: auto;
   border-radius: 10px;
 }
+
 
 .sobre-mim__texto {
   background-color: var(--roxo-claro);
   padding: 2%;
   flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza o conteúdo */
 }
 
 .hello-word {
@@ -596,7 +670,9 @@ body {
   animation: fadeIn 2s ease-in-out;
 }
 
+
 .scroll-box {
+  width: 100%; /* mesma largura do gif */
   max-height: 200px;
   overflow-y: auto;
   padding: 10px;
