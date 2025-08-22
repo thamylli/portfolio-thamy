@@ -118,7 +118,7 @@
 
   /* outras cores */
   --cor-preta: #f5f5f5;
-  --cor-pessego: #8e3e2c;
+  --cor-pessego: rgba(86, 6, 88, 0.566);
   --cor-branquinho: rgba(255, 255, 255, 0.1);
   --cor-branquinho-forte: rgba(255, 255, 255, 0.2);
   --cor-rosinha: rgba(234, 144, 144, 0.3);
@@ -653,7 +653,7 @@ body {
 /*certificados*/
 .apresentacao__certificados{
     background-color: var(--lilas-doce);
-    margin: 2%;
+    margin: 3%;
     border: solid 3px var(--pretinho);
     border-bottom: solid 10px var(--pretinho);
     border-right: solid 10px var(--pretinho);
@@ -893,6 +893,7 @@ body {
     margin-bottom: 2%;
     margin: 3%;
     box-sizing: border-box;
+    
 }
 .projetos-principal{
     display: flex;
@@ -921,6 +922,7 @@ body {
     background-color: var(--cor-branquinho);
 }
 .projetos-sites{
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -929,12 +931,14 @@ body {
     box-sizing: border-box;
 }
 .projetos-imagens{
+  
      width: 390px;
     height: 250px;
     object-fit: cover;
     border-radius: 5px;
-    border: solid;
+    border: solid 2px var(--cor-escura);
 }
+
 .seta-projetos{
   width: 3rem;
   height: 3rem;
